@@ -1,0 +1,716 @@
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+$v-font-size: 14px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+
+
+@import "../valo/valo.scss";
+
+@mixin quantum {
+  @include valo;
+
+:root {
+    --ColorGolpeDeVista: #9FFFA1;
+    --vaadin-layout-spacing-xs: 1px;
+}
+
+
+.TextoFiled {
+	border: 2px solid #456879;
+    font-weight: bold;
+    text-align: center;
+    background: Beige;
+    background-color: Beige;
+}
+
+@keyframes exampleA {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+.TextoBox {
+	border: 2px solid #456879;
+    //border-radius: 10px;
+    font-weight: bold;
+}
+
+.LabelTexto {
+    font-weight: bold;
+}
+
+.TextoPassword {
+	background-color : yellow;
+	border: 1px solid #008000;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.boton3d {
+  background: black; //#00b7f8;
+  border-bottom: 5px solid #0045a6;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px #999;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: "Dancing Script"; 
+  font-size: 50px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  height: 32px;
+  margin: 80px auto;
+  padding: 20px 20px;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  width: 120px;
+
+  text-shadow: 0 0 10px #edf000,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #edf000,
+               0 0 70px #edf000,
+               0 0 80px #edf000,
+               0 0 100px #edf000,
+               0 0 150px #edf000;           
+}
+
+.boton3d:hover {
+  background: #0096f7;
+}
+
+  .estilotitulo {background: black;font-size: 18px}
+  .estilotitulofechahora {background: lightblue;font-size: 18px}
+
+
+//  ************************************ Menu Secundario **************************************
+  .botonobalado {
+     text-decoration: none;
+     //padding: 3px;
+     //padding-left: 10px;
+     //padding-right: 10px;
+     font-family: helvetica;
+     font-weight: 300;
+     font-size: 25px;
+     color: black;
+     background: lightblue;
+     border-radius: 15xp;
+     border: 3px solid blue;
+     border-top-right-radius: 16px;
+     border-top-left-radius: 16px;
+     border-bottom-right-radius: 16px;
+     border-bottom-left-radius: 16px;
+    
+     //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     vertical-align: middle;
+     text-align: center;
+     padding-bottom: 10px; 
+  }
+
+  .botonobalado:hover {
+    //opacity: 0.6;
+    text-decoration: none;
+    border: 3px solid black;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+//  ************************************** Boton Login *************************************
+  .botonlogin {
+     text-decoration: none;
+     //padding: 3px;
+     //padding-left: 10px;
+     //padding-right: 10px;
+	 
+	 font: bold 25px Helvetica, Sans-Serif;
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #3090C7;
+	 text-shadow: 0px 1px 2px #62C2F9;
+	 background: lightblue;
+     border-radius: 15xp;
+     border: 3px solid blue;
+     border-top-right-radius: 16px;
+     border-top-left-radius: 16px;
+     border-bottom-right-radius: 16px;
+     border-bottom-left-radius: 16px;
+     //box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  }
+
+  .botonlogin:hover {
+    //opacity: 0.6;
+    text-decoration: none;
+    border: 3px solid black;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+.loginLabel {
+  //font-family: "Dancing Script"; 
+  font-size: 20px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  height: 32px;
+  text-align: center;  
+}
+
+//  ***************************************** Menu Principal *********************************
+  .botonmenu {
+    display: block;
+    width: 250px;
+    height: 60px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #4682B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+ 
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+ 
+    font: bold 25px Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3090C7;
+    text-shadow: 0px 1px 2px #62C2F9;
+  }
+
+  .botonmenu:hover {
+    opacity: 0.6;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+
+
+
+//   ********************************** Modulo Golpe de Vista ************************************
+
+//   **************** Fondo Windows Principal  **********************
+
+.LayoutWindowDetalle {
+    background-color: #E1FFBF;
+}
+
+//   ************************ Degradados  ***************************
+
+.LabelTituloAyuda {
+	//border: 2px solid #456879;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    //background: #9FFFA1;
+    //background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));     
+}
+
+.DataDetalle02 {
+    //background: #9FFFA1;
+    //background: -moz-linear-gradient(top, White 0%, #9FFFA1 100%);
+    //background: -webkit-gradient(linear, left top, right top, color-stop(100%,White), color-stop(0%,#9FFFA1));
+    background: #7FFF82;
+    border: 1px solid #008000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.DataDetalle03 {
+    //background: #9FFFA1;
+    //background: -moz-linear-gradient(top, White 0%, #9FFFA1 100%);
+    //background: -webkit-gradient(linear, right top, left top, color-stop(100%,White), color-stop(0%,#9FFFA1));
+    
+    background: #7FFF82;
+    border: 1px solid #008000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.TituloFoto01{ 
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #0000FF 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#0000FF), color-stop(100%,#F0FFFF));
+    border: 1px solid #008000;
+}
+
+.GrupoCabezera02{ 
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 1px solid #008000;
+}
+
+.BotonDataDetalle01 {
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White  100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 1px solid #008000;
+}
+
+.GrupoCabezera01{ 
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 1px solid #008000;
+}
+
+.DegradacionVerdeTopBottom{
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    border: 2px solid black;
+}
+
+.DegradacionAmarilloNotaBottomTop{
+    background: Beige;
+    background: -moz-linear-gradient(top, Beige 0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,Beige));
+    border: 2px solid black;
+}
+
+.WindowDetalle {
+    font-weight: bold;
+    color: black;
+}
+
+.v-window-WindowDetalle .v-window-outerheader {
+    background: black;
+}
+
+.v-window-WindowDetalle .v-window-header {
+     color: White;
+     text-align: center;
+     font-size: 20px;
+}
+
+.BotonProtocolo01{ 
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; 
+    border: 1px solid #008000; 
+    
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #ADD8E6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#ADD8E6));
+    
+}
+
+
+/************************************ Sin Degradado ***************************************/
+
+.LabelDetelleOK {
+    background-color: #9FFFA1;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #008000;
+    font-weight: bold;
+    vertical-align: middle; 
+    color: black;
+}
+
+.LabelDetalle01 {
+    background-color: black;
+	border: 1px solid #008000;
+    font-size: 14px;
+    text-align: center;  
+    border-radius: 0xp;
+    color: White;  
+}
+
+.TextDetalle01 {
+ 	background-color: White;
+	border: 1px solid #008000;
+    font-size: 25px;
+    text-align: center;  
+    border-radius: 0xp;
+    color: black;    
+}
+
+.LabelDetalle02 {
+    background-color: DarkOrange;
+	border: 1px solid #008000;
+    font-size: 12px;
+    text-align: center;  
+    border-radius: 0xp;
+    color: black;  
+}
+
+.TextDetalle02 {
+	border: 1px solid #008000;
+    font-size: 12px;
+    text-align: center; 
+    border-radius: 0xp;
+    color: black;   
+}
+
+.DataDetalle01 {
+    background-color: DodgerBlue;
+    border: 1px solid #008000;
+}
+
+.DataDetalle {
+    background-color: DodgerBlue;
+    border: 1px solid #008000;
+}
+
+.BotonCabezeraNegro01 {
+    background-color: Black;
+    background: Black;
+    border: 1px solid #008000;
+}
+
+.BotonCabezeraGris01 {
+    background-color: Gray;
+    background: Gray;
+    border: 1px solid #008000;
+    -webkit-border-top-right-radius: 120px;
+    -moz-border-radius-topright: 120px;
+    border-top-right-radius: 120px;
+}
+
+.BotonCabezeraGris02 {
+    background-color: Gray;
+    background: Gray;
+    border: 1px solid #008000;
+    -webkit-border-top-left-radius: 120px;
+    -moz-border-radius-topleft: 120px;
+    border-top-left-radius: 120px;
+}
+
+.LayoutTituloDetalle01 {
+    background-color: black;
+    background: black;
+    border: 3px solid #FF0000;
+}
+
+.LayoutTituloDatos01 {
+    background-color: #5B5B5B;
+    background: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: White;
+}
+
+
+.TextoFiledTelefono {
+	border: 2px solid #456879;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: #9FFFA1;
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White  100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    color: black;
+}
+
+
+.FechaField {
+	border: 2px solid #456879;
+    font-weight: bold;
+    text-align: center;
+    background: Blue;
+    background-color: Blue;
+}
+
+.LabelTituloRojo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+.LabelTituloRojoI {
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    color: red;
+}
+
+.LabelTituloRojoD {
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+    color: red;   
+}
+
+.LabelTituloNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.LabelTituloNegroI {
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
+
+.LabelTituloNegroD {
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+}
+
+.FondoNegroLetrasBlancas {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background: black;
+    background-color: black;
+}
+
+.SinFondoLetrasNegras {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.LabelTextoNegroLetra22 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+.LabelTextoRojo12 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+.BotonNegroLetrasAmarillas {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+}
+
+.LayoutEspaciadoMinimo {
+   padding-top: 3px;
+}
+
+.LayoutEspaciadoMinimo > .v-spacing {
+    width: 3px;
+    height: 3px; 
+}
+
+
+.DatosReserva01{
+
+}
+
+.DatosReserva01 .v-spacing {
+       height: 21px;
+}
+
+/************************************************* Golpe de Vista *********************************************/
+
+.LabelTexteBlancoFondoNegro {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: White;
+    background: black;
+    background-color: black;
+}
+
+.LabelTituloAyuda {
+	//border: 1px solid black;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    text-shadow: 8px 8px 12px rgba(252, 252, 252, 1);
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top,#9FFFA1  0%, White 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,White), color-stop(100%,#9FFFA1));     
+}
+
+.LabelTituloDatosGolpeVista01 {
+    background-color: #5B5B5B;
+    background: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: White;
+}
+
+.LabelTituloDatosGolpeVista02{ 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: #9FFFA1;
+    background: -moz-linear-gradient(top, #9FFFA1 0%, White 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,White), color-stop(100%,#9FFFA1));
+    //border: 1px solid #008000;
+}
+
+.BotonPalyStopGolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+    background: black;
+    background-color: black;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+}
+
+.LabelOKGolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: #05C600;
+    background-color: #05C600;
+    border: 1px solid #008000;
+}
+
+.LabelTituloFechaGolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: Black;
+    background-color: Black;
+    border: 1px solid #008000;
+}
+
+.LabelFecha01GolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LabelFecha02GolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #808281;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LabelFecha03GolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	#B6B6B6;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.BotonComunicacionGolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: 	Black;
+    background: White;
+    background-color: White;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid Black;    
+}
+
+.LabelTituloDatos01GolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: White;
+    background: #F87B21;
+    background-color: #F87B21;
+    border: 1px solid #008000;
+}
+
+.LabelDatos01GolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LayoutDatosGolpeVista {
+    background: #79FD83;
+    background-color: #9CE99B;
+    border: 1px solid #008000;
+}
+
+.LayoutFotoGolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+.LayoutFotoGolpeVista {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: Black;
+    background: White;
+    background-color: White;
+    border: 1px solid #008000;
+}
+
+}
